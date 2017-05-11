@@ -6,15 +6,12 @@ import sys
 #Enter values for a, b, and c in the command line
 #e.g. run: >python quadratic.py 1 2 -15
 def main():
-    try:
-        a = int(sys.argv[1])
-        b = int(sys.argv[2])
-        c = int(sys.argv[3])
-        x1, x2 = find_roots(a, b, c)
-        print ("This is x1: %f" %x1)
-        print ("This is x2: %f" %x2)
-    except TypeError:
-        print("This has imaginary roots. Try a combination with real roots")
+    a = int(sys.argv[1])
+    b = int(sys.argv[2])
+    c = int(sys.argv[3])
+    x1, x2 = find_roots(a, b, c)
+    print ("This is x1: %f" %x1)
+    print ("This is x2: %f" %x2)
 
 def find_roots(a,b,c):
     try:
